@@ -88,6 +88,51 @@
   padding-left: 20px;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.main img {
+  width: 30%;
+}
+
+.main div.header {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.main span {
+  color: #c4c4c4;
+}
+
+.main div.aboutme {
+  padding-top: 21px;
+  font-size: 0.68rem;
+}
+
+.main button {
+  background-color: #c27a7a;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 20.5px;
+  width: 220px;
+  height: 41px;
+  outline: none;
+  cursor: pointer;
+  margin: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
