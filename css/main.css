@@ -3,48 +3,41 @@
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  grid-template: 'myurl' 15vh 'countdown' 10vh 'starttag' 10vh 'main' 65vh 'skills' 80vh 'social' 10vh 'closetag' 10vh / 1fr;
+  grid-template: 'myurlgrid' 15vh 'countdowngrid' 10vh 'starttaggrid' 10vh 'maingrid' 65vh 'skillsgrid' 65vh 'socialgrid' 20vh 'closetaggrid' 15vh / 1fr;
 }
 
 @media screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurl countdown countdown countdown skills' 250px 'starttag ..... ..... ..... skills' 90px 'social main main main skills' 1fr 'closetag main main main skills' 150px / 25% 1fr 1fr 1fr 25%;
+    grid-template: 'myurlgrid countdowngrid countdowngrid countdowngrid skillsgrid' 250px 'starttaggrid ..... ..... ..... skillsgrid' 90px 'socialgrid maingrid maingrid maingrid skillsgrid' 1fr 'closetaggrid maingrid maingrid maingrid skillsgrid' 150px / 25% 1fr 1fr 1fr 25%;
   }
 }
 
 .myurl {
-  grid-area: myurl;
-  border: 1px solid black;
+  grid-area: myurlgrid;
 }
 
 .countdown {
-  grid-area: countdown;
-  border: 1px solid black;
+  grid-area: countdowngrid;
 }
 
 .starttag {
-  grid-area: starttag;
-  border: 1px solid black;
+  grid-area: starttaggrid;
 }
 
 .main {
-  grid-area: main;
-  border: 1px solid black;
+  grid-area: maingrid;
 }
 
 .skills {
-  grid-area: skills;
-  border: 1px solid black;
+  grid-area: skillsgrid;
 }
 
 .social {
-  grid-area: social;
-  border: 1px solid black;
+  grid-area: socialgrid;
 }
 
 .closetag {
-  grid-area: closetag;
-  border: 1px solid black;
+  grid-area: closetaggrid;
 }
 
 .myurl {
@@ -82,10 +75,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-left: 20px;
+  opacity: 30%;
+}
+
+.starttag img {
+  max-width: 3.4rem;
 }
 
 .main {
@@ -119,7 +117,7 @@
   font-size: 0.68rem;
 }
 
-.main button {
+.main button.contact-btn {
   background-color: #c27a7a;
   color: #ffffff;
   font-size: 1.5rem;
@@ -131,6 +129,56 @@
   outline: none;
   cursor: pointer;
   margin: auto;
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills ul {
+  list-style-type: none;
+  line-height: 2rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  opacity: 50%;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social a {
+  font-size: 4rem;
+  margin: 20px;
+  color: #000000;
+}
+
+.closetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  opacity: 30%;
+}
+
+.closetag img {
+  max-width: 3.4rem;
 }
 
 * {
