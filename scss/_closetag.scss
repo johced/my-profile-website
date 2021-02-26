@@ -1,0 +1,9 @@
+.closetag {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  opacity: 30%;
+  & img {
+    max-width: 3.4rem;
+  }
+}
