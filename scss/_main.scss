@@ -19,6 +19,10 @@
   & div.aboutme {
     padding-top: 21px;
     font-size: 0.68rem;
+    & span.highlight {
+      text-decoration: underline;
+      color: $highlight;
+    }
   }
 
   & button.contact-btn {
