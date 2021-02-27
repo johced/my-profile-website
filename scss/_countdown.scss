@@ -4,6 +4,9 @@
   align-items: center;
   font-weight: $fw-light;
   font-size: 0.8rem;
+  background-color: $black;
+  color: $darkgrey;
+
   @include tabletside {
     font-size: 1rem;
   }

@@ -8,19 +8,19 @@
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 35px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 1024px) and (min-height: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 35px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 1366px) and (min-height: 1024px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 35px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -62,11 +62,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #342e37;
 }
 
 .myurl h1 {
   font-weight: 900;
   font-size: 3rem;
+  color: #dce1e3;
+  opacity: 30%;
 }
 
 .countdown {
@@ -81,6 +84,8 @@
           align-items: center;
   font-weight: 100;
   font-size: 0.8rem;
+  background-color: #342e37;
+  color: #736f72;
 }
 
 @media only screen and (min-width: 1024px) and (min-height: 768px) {
@@ -154,11 +159,14 @@
   padding-top: 21px;
   font-size: 0.68rem;
   max-width: 600px;
+  color: #ffffff;
 }
 
 .main div.aboutme span.highlight {
   text-decoration: underline;
-  color: #c29d7a;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #fafffd;
 }
 
 @media only screen and (min-width: 768px) {
@@ -174,7 +182,7 @@
 }
 
 .main button {
-  background-color: #5c5f58;
+  background-color: #a63d46;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 900;
@@ -235,7 +243,7 @@
 }
 
 .skills ul li:nth-child(odd) {
-  color: #dce1e3;
+  color: #fafffd;
 }
 
 .social {
@@ -266,7 +274,7 @@
 .social i {
   font-size: 4rem;
   margin: 20px;
-  color: #000000;
+  color: #342e37;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
@@ -276,7 +284,7 @@
 }
 
 .social i.fa-github:hover {
-  color: #6cc644;
+  color: #509632;
 }
 
 .closetag {
@@ -309,8 +317,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #004e7c;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  background-color: #736f72;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

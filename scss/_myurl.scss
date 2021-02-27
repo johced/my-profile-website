@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $black;
+
   & h1 {
     font-weight: 900;
     font-size: 3rem;
+    color: $light-grey;
+    opacity: 30%;
   }
 }

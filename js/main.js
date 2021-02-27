@@ -4,9 +4,9 @@ window.onload = function () {
 };
 
 function changeColorBg() {
-  document.body.style.backgroundColor = '#304E7C';
+  document.body.style.backgroundColor = '#342e37';
 }
 
 function changeColorBack() {
-  document.body.style.backgroundColor = '#004E7C';
+  document.body.style.backgroundColor = '#736f72';
 }

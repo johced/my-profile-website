@@ -25,9 +25,12 @@
     padding-top: 21px;
     font-size: 0.68rem;
     max-width: 600px;
+    color: $white;
     & span.highlight {
       text-decoration: underline;
-      color: $highlight;
+      font-size: 1rem;
+      font-weight: 900;
+      color: $background;
     }
     @include tablet {
       font-size: 0.9rem;
