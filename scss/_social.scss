@@ -9,9 +9,18 @@
     padding-top: 100px;
   }
 
-  & a {
+  & i {
     font-size: 4rem;
     margin: 20px;
     color: $black;
+    transition: 300ms ease-in-out;
+  }
+
+  & i.fa-linkedin-in:hover {
+    color: $linkedin;
+  }
+
+  & i.fa-github:hover {
+    color: $github;
   }
 }

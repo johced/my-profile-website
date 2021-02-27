@@ -83,9 +83,15 @@
   font-size: 0.8rem;
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
   .countdown {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .countdown {
+    font-size: 1.2rem;
   }
 }
 
@@ -124,7 +130,7 @@
 
 .main img {
   width: 30%;
-  max-width: 150px;
+  max-width: 125px;
 }
 
 .main div.header {
@@ -141,7 +147,7 @@
 }
 
 .main span {
-  color: #c4c4c4;
+  color: #dce1e3;
 }
 
 .main div.aboutme {
@@ -167,8 +173,8 @@
   }
 }
 
-.main button.contact-btn {
-  background-color: #c27a7a;
+.main button {
+  background-color: #5c5f58;
   color: #ffffff;
   font-size: 1.5rem;
   font-weight: 900;
@@ -179,10 +185,12 @@
   outline: none;
   cursor: pointer;
   margin: auto;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media only screen and (min-width: 768px) {
-  .main button.contact-btn {
+  .main button {
     margin: 2rem 0;
   }
 }
@@ -219,6 +227,17 @@
   opacity: 50%;
 }
 
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .skills ul {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+}
+
+.skills ul li:nth-child(odd) {
+  color: #dce1e3;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,10 +263,20 @@
   }
 }
 
-.social a {
+.social i {
   font-size: 4rem;
   margin: 20px;
   color: #000000;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.social i.fa-linkedin-in:hover {
+  color: #0072b1;
+}
+
+.social i.fa-github:hover {
+  color: #6cc644;
 }
 
 .closetag {
@@ -280,6 +309,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #dddddd;
+  background-color: #004e7c;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,7 +6,7 @@
 
   & img {
     width: 30%;
-    max-width: 150px;
+    max-width: 125px;
   }
   & div.header {
     padding-top: 30px;
@@ -37,7 +37,7 @@
     }
   }
 
-  & button.contact-btn {
+  & button {
     background-color: $attention;
     color: $white;
     font-size: 1.5rem;
@@ -49,8 +49,14 @@
     outline: none;
     cursor: pointer;
     margin: auto;
+    transition: 1s;
+
     @include tablet {
       margin: 2rem 0;
     }
   }
 }
+
+// .contact-btn:hover {
+//   background-color: blue;
+// }

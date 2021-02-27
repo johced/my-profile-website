@@ -4,7 +4,10 @@
   align-items: center;
   font-weight: $fw-light;
   font-size: 0.8rem;
-  @include tabletproside {
+  @include tabletside {
     font-size: 1rem;
+  }
+  @include tabletproside {
+    font-size: 1.2rem;
   }
 }
