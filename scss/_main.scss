@@ -7,9 +7,6 @@
   & img {
     width: 30%;
     max-width: 150px;
-    @include tabletside {
-      width: 20%;
-    }
   }
   & div.header {
     padding-top: 30px;

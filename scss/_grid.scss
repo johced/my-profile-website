@@ -4,8 +4,8 @@
   grid-template:
     'myurlgrid' 15vh
     'countdowngrid' 10vh
-    'starttaggrid' 10vh
-    'maingrid' 65vh
+    'starttaggrid' 5vh
+    'maingrid' 70vh
     'skillsgrid' 65vh
     'socialgrid' 25vh
     'closetaggrid' 10vh
@@ -13,7 +13,7 @@
   @include tablet {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 70px
+      'starttaggrid ........  ........      ........      .........' 35px
       'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr
       'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px
@@ -22,34 +22,19 @@
   @include tabletside {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 70px
+      'starttaggrid ........  ........      ........      .........' 35px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
   }
-  @include tabletpro {
-    grid-template:
-      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 70px
-      'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
-      'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
-      / 20% 1fr 1fr 1fr 1fr;
-  }
+
   @include tabletproside {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 70px
+      'starttaggrid ........  ........      ........      .........' 35px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
-  }
-  @include desktop {
-    grid-template:
-      '........   myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid  ........' 100px
-      '........   starttaggrid ........  ........      ........      .........      ........' 70px
-      '........   socialgrid   maingrid  maingrid      maingrid      skillsgrid     ........' 1fr
-      '........   closetaggrid maingrid  maingrid      maingrid      skillsgrid     ........' 75px
-      / 15% 10% 1fr 1fr 1fr 1fr 15%;
   }
 }
 
