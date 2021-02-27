@@ -1,33 +1,17 @@
 .social {
   display: flex;
+  align-items: center;
   justify-content: center;
+
   @include tablet {
     flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-  }
-
-  @include tabletside {
-    padding-bottom: 70px;
-  }
-
-  @include tabletproside {
-    justify-content: left;
-    padding-top: 90%;
+    justify-content: unset;
+    padding-top: 100px;
   }
 
   & a {
     font-size: 4rem;
     margin: 20px;
     color: $black;
-
-    @include tabletpro {
-      position: relative;
-      top: -32%;
-    }
-    @include desktop {
-      position: relative;
-      top: 25px;
-    }
   }
 }
