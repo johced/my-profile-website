@@ -13,7 +13,7 @@
   @include tablet {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 35px
+      'starttaggrid ........  ........      ........      .........' 50px
       'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr
       'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px
@@ -22,7 +22,7 @@
   @include tabletside {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 35px
+      'starttaggrid ........  ........      ........      .........' 50px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
@@ -31,7 +31,7 @@
   @include tabletproside {
     grid-template:
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 35px
+      'starttaggrid ........  ........      ........      .........' 50px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
