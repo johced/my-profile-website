@@ -8,43 +8,60 @@
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 150px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 25% 1fr 1fr 1fr 25%;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px / 20% 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .grid-container {
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 825px) {
+  .grid-container {
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .grid-container {
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (min-height: 769px) {
+  .grid-container {
+    grid-template: '........   myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid  ........' 100px '........   starttaggrid ........  ........      ........      .........      ........' 70px '........   socialgrid   maingrid  maingrid      maingrid      skillsgrid     ........' 1fr '........   closetaggrid maingrid  maingrid      maingrid      skillsgrid     ........' 75px / 15% 10% 1fr 1fr 1fr 1fr 15%;
   }
 }
 
 .myurl {
   grid-area: myurlgrid;
-  border: 1px solid black;
 }
 
 .countdown {
   grid-area: countdowngrid;
-  border: 1px solid black;
 }
 
 .starttag {
   grid-area: starttaggrid;
-  border: 1px solid black;
 }
 
 .main {
   grid-area: maingrid;
-  border: 1px solid black;
 }
 
 .skills {
   grid-area: skillsgrid;
-  border: 1px solid black;
 }
 
 .social {
   grid-area: socialgrid;
-  border: 1px solid black;
 }
 
 .closetag {
   grid-area: closetaggrid;
-  border: 1px solid black;
 }
 
 .myurl {
@@ -78,6 +95,12 @@
   font-size: 0.8rem;
 }
 
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .countdown {
+    font-size: 1rem;
+  }
+}
+
 .starttag {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +114,12 @@
 
 .starttag img {
   max-width: 3.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .starttag img {
+    max-width: 5rem;
+  }
 }
 
 .main {
@@ -107,6 +136,13 @@
 
 .main img {
   width: 30%;
+  max-width: 150px;
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .main img {
+    width: 20%;
+  }
 }
 
 .main div.header {
@@ -116,6 +152,12 @@
   max-width: 500px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main div.header {
+    font-size: 2.3rem;
+  }
+}
+
 .main span {
   color: #c4c4c4;
 }
@@ -123,11 +165,24 @@
 .main div.aboutme {
   padding-top: 21px;
   font-size: 0.68rem;
+  max-width: 600px;
 }
 
 .main div.aboutme span.highlight {
   text-decoration: underline;
   color: #c29d7a;
+}
+
+@media only screen and (min-width: 768px) {
+  .main div.aboutme {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .main div.aboutme {
+    font-size: 1.25rem;
+  }
 }
 
 .main button.contact-btn {
@@ -142,6 +197,12 @@
   outline: none;
   cursor: pointer;
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .main button.contact-btn {
+    margin: 2rem 0;
+  }
 }
 
 .skills {
@@ -164,6 +225,38 @@
   opacity: 50%;
 }
 
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .skills ul {
+    position: relative;
+    top: -10%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 825px) {
+  .skills ul {
+    position: relative;
+    top: -30%;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .skills ul {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    position: relative;
+    top: -15%;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (min-height: 769px) {
+  .skills ul {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    position: relative;
+    top: -20%;
+  }
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,10 +266,52 @@
           justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .social {
+    padding-bottom: 70px;
+  }
+}
+
+@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  .social {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 90%;
+  }
+}
+
 .social a {
   font-size: 4rem;
   margin: 20px;
   color: #000000;
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 825px) {
+  .social a {
+    position: relative;
+    top: -32%;
+  }
+}
+
+@media only screen and (min-width: 1367px) and (min-height: 769px) {
+  .social a {
+    position: relative;
+    top: 25px;
+  }
 }
 
 .closetag {
@@ -191,7 +326,13 @@
 }
 
 .closetag img {
-  max-width: 3.74rem;
+  max-width: 3.7rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .closetag img {
+    max-width: 4.3rem;
+  }
 }
 
 * {

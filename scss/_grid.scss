@@ -12,45 +12,78 @@
     / 1fr;
   @include tablet {
     grid-template:
-      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 150px
+      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
+      'starttaggrid ........  ........      ........      .........' 70px
+      'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr
+      'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr
+      'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px
+      / 20% 1fr 1fr 1fr 1fr;
+  }
+  @include tabletside {
+    grid-template:
+      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
       'starttaggrid ........  ........      ........      .........' 70px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
       'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
-      / 25% 1fr 1fr 1fr 25%;
+      / 20% 1fr 1fr 1fr 1fr;
+  }
+  @include tabletpro {
+    grid-template:
+      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
+      'starttaggrid ........  ........      ........      .........' 70px
+      'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
+      'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
+      / 20% 1fr 1fr 1fr 1fr;
+  }
+  @include tabletproside {
+    grid-template:
+      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
+      'starttaggrid ........  ........      ........      .........' 70px
+      'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
+      'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
+      / 20% 1fr 1fr 1fr 1fr;
+  }
+  @include desktop {
+    grid-template:
+      '........   myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid  ........' 100px
+      '........   starttaggrid ........  ........      ........      .........      ........' 70px
+      '........   socialgrid   maingrid  maingrid      maingrid      skillsgrid     ........' 1fr
+      '........   closetaggrid maingrid  maingrid      maingrid      skillsgrid     ........' 75px
+      / 15% 10% 1fr 1fr 1fr 1fr 15%;
   }
 }
 
 .myurl {
   grid-area: myurlgrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .countdown {
   grid-area: countdowngrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .starttag {
   grid-area: starttaggrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .main {
   grid-area: maingrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .skills {
   grid-area: skillsgrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .social {
   grid-area: socialgrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .closetag {
   grid-area: closetaggrid;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
