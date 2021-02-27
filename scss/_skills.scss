@@ -8,5 +8,26 @@
     font-size: 0.875rem;
     font-weight: $fw-normal;
     opacity: 50%;
+
+    @include tabletside {
+      position: relative;
+      top: -10%;
+    }
+    @include tabletpro {
+      position: relative;
+      top: -30%;
+    }
+    @include tabletproside {
+      font-size: 1rem;
+      line-height: 2.5rem;
+      position: relative;
+      top: -15%;
+    }
+    @include desktop {
+      font-size: 1rem;
+      line-height: 2.5rem;
+      position: relative;
+      top: -20%;
+    }
   }
 }

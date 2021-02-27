@@ -1,16 +1,24 @@
 .main {
   display: flex;
   flex-direction: column;
-
   padding-left: 27px;
   padding-right: 27px;
+
   & img {
     width: 30%;
+    max-width: 150px;
+    @include tabletside {
+      width: 20%;
+    }
   }
   & div.header {
     padding-top: 30px;
     font-size: 1.5rem;
     font-weight: $fw-bold;
+    max-width: 500px;
+    @include tablet {
+      font-size: 2.3rem;
+    }
   }
   & span {
     color: $light-grey;
@@ -19,9 +27,16 @@
   & div.aboutme {
     padding-top: 21px;
     font-size: 0.68rem;
+    max-width: 600px;
     & span.highlight {
       text-decoration: underline;
       color: $highlight;
+    }
+    @include tablet {
+      font-size: 0.9rem;
+    }
+    @include tabletproside {
+      font-size: 1.25rem;
     }
   }
 
@@ -37,5 +52,8 @@
     outline: none;
     cursor: pointer;
     margin: auto;
+    @include tablet {
+      margin: 2rem 0;
+    }
   }
 }

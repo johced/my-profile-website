@@ -4,4 +4,7 @@
   align-items: center;
   font-weight: $fw-light;
   font-size: 0.8rem;
+  @include tabletproside {
+    font-size: 1rem;
+  }
 }

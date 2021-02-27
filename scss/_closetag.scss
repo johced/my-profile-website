@@ -1,9 +1,12 @@
 .closetag {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   padding-left: 20px;
   opacity: 30%;
   & img {
-    max-width: 3.4rem;
+    max-width: 3.7rem;
+    @include tablet {
+      max-width: 4.3rem;
+    }
   }
 }
