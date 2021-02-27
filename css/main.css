@@ -3,41 +3,48 @@
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  grid-template: 'myurlgrid' 15vh 'countdowngrid' 10vh 'starttaggrid' 10vh 'maingrid' 65vh 'skillsgrid' 65vh 'socialgrid' 20vh 'closetaggrid' 15vh / 1fr;
+  grid-template: 'myurlgrid' 15vh 'countdowngrid' 10vh 'starttaggrid' 10vh 'maingrid' 65vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid countdowngrid countdowngrid countdowngrid skillsgrid' 250px 'starttaggrid ..... ..... ..... skillsgrid' 90px 'socialgrid maingrid maingrid maingrid skillsgrid' 1fr 'closetaggrid maingrid maingrid maingrid skillsgrid' 150px / 25% 1fr 1fr 1fr 25%;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 150px 'starttaggrid ........  ........      ........      .........' 70px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 25% 1fr 1fr 1fr 25%;
   }
 }
 
 .myurl {
   grid-area: myurlgrid;
+  border: 1px solid black;
 }
 
 .countdown {
   grid-area: countdowngrid;
+  border: 1px solid black;
 }
 
 .starttag {
   grid-area: starttaggrid;
+  border: 1px solid black;
 }
 
 .main {
   grid-area: maingrid;
+  border: 1px solid black;
 }
 
 .skills {
   grid-area: skillsgrid;
+  border: 1px solid black;
 }
 
 .social {
   grid-area: socialgrid;
+  border: 1px solid black;
 }
 
 .closetag {
   grid-area: closetaggrid;
+  border: 1px solid black;
 }
 
 .myurl {
@@ -106,6 +113,7 @@
   padding-top: 30px;
   font-size: 1.5rem;
   font-weight: 900;
+  max-width: 500px;
 }
 
 .main span {
@@ -175,15 +183,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   padding-left: 20px;
   opacity: 30%;
 }
 
 .closetag img {
-  max-width: 3.4rem;
+  max-width: 3.74rem;
 }
 
 * {
