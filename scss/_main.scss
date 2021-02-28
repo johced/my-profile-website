@@ -3,6 +3,9 @@
   flex-direction: column;
   padding-left: 27px;
   padding-right: 27px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
   & img {
     width: 20%;
@@ -10,7 +13,7 @@
   }
   & div.header {
     padding-top: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: $fw-bold;
     max-width: 500px;
     color: $background;
@@ -25,7 +28,7 @@
     }
   }
   & span {
-    color: $background;
+    // color: $background;
     font-size: 1.3rem;
     color: $darkgrey;
     @include tablet {
@@ -70,12 +73,40 @@
     outline: none;
     cursor: pointer;
     margin: auto;
-    transition: 1s;
+    // margin: 1rem;
+    // transition: 0.5s;
+    position: relative;
+    --border-size: 2px;
+    // --border-color: #e3e3e3;
 
+    // --background-color: #e3e3e3;
     @include tablet {
       margin: 2rem 0;
     }
   }
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  border-radius: 20.5px;
+  z-index: -1;
+  border: var(--border-size) solid $background;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.contact-btn:hover::before,
+.contact-btn:focus::before {
+  border-radius: 30px;
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
 }
 
 // .contact-btn:hover {

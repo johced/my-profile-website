@@ -8,7 +8,7 @@
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........      ........      ........      .........' 50px 'socialgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -63,6 +63,13 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #342e37;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
 }
 
 .myurl h1 {
@@ -86,6 +93,13 @@
   font-size: 0.8rem;
   background-color: #342e37;
   color: #736f72;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -131,6 +145,13 @@
           flex-direction: column;
   padding-left: 27px;
   padding-right: 27px;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
 }
 
 .main img {
@@ -140,7 +161,7 @@
 
 .main div.header {
   padding-top: 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 900;
   max-width: 500px;
   color: #fafffd;
@@ -160,7 +181,6 @@
 }
 
 .main span {
-  color: #fafffd;
   font-size: 1.3rem;
   color: #736f72;
 }
@@ -221,14 +241,37 @@
   outline: none;
   cursor: pointer;
   margin: auto;
-  -webkit-transition: 1s;
-  transition: 1s;
+  position: relative;
+  --border-size: 2px;
 }
 
 @media only screen and (min-width: 768px) {
   .main button {
     margin: 2rem 0;
   }
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20.5px;
+  z-index: -1;
+  border: var(--border-size) solid #fafffd;
+  -webkit-transition: top, left, right, bottom, 100ms ease-in-out;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.contact-btn:hover::before,
+.contact-btn:focus::before {
+  border-radius: 30px;
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
 }
 
 .skills {
@@ -256,11 +299,21 @@
 }
 
 .skills ul {
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
   list-style-type: none;
   line-height: 2rem;
   font-size: 0.875rem;
   font-weight: 300;
   color: #736f72;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  cursor: none;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -272,6 +325,12 @@
 
 .skills ul li:nth-child(odd) {
   color: #fafffd;
+}
+
+.skills ul li:hover {
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+  font-weight: 900;
 }
 
 .social {
@@ -319,12 +378,24 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.7rem;
+  color: #736f72;
   padding-left: 20px;
   background-color: #ffffff;
   border-radius: 50% 50% 0% 0%;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none;
+  /* Standard syntax */
 }
 
 .closetag img {
@@ -347,7 +418,14 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #342e37;
+  background-image: linear-gradient(45deg, #342e37, #342e37, #342e37, #736f72);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: linear-gradient(45deg, #342e37, #342e37, #342e37, #342e37, #736f72);
+  }
 }
 /*# sourceMappingURL=main.css.map */
