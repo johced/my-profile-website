@@ -1,22 +1,14 @@
 window.onload = function () {
-  // document.getElementById('changeBg').addEventListener('mouseover', changeColorBg);
-  // document.getElementById('changeBg').addEventListener('mouseout', changeColorBack);
+  document.getElementById('changeBg').addEventListener('mouseover', changeColorBg);
+  document.getElementById('changeBg').addEventListener('mouseout', changeColorBack);
 };
 
 function changeColorBg() {
-  // document.body.style.backgroundColor = '#392e37';
-  // document.body.style.backgroundImage =
-  //   'linear-gradient(45deg, #342e37, #342e37, #342e37, #736f72)';
   document.getElementById('gitBg').style.color = '#dce1e3';
   document.getElementById('linkedBg').style.color = '#dce1e3';
-  // document.getElementById('aboutmeBg').style.color = '#736f72';
-  // document.getElementById('highlightBg').style.color = '#736f72';
 }
 
 function changeColorBack() {
-  // document.body.style.backgroundImage = '';
   document.getElementById('gitBg').style.color = '';
   document.getElementById('linkedBg').style.color = '';
-  // document.getElementById('aboutmeBg').style.color = '';
-  // document.getElementById('highlightBg').style.color = '';
 }
