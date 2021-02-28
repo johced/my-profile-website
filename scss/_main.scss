@@ -73,7 +73,7 @@
     width: 220px;
     height: 41px;
     outline: none;
-    cursor: pointer;
+    cursor: none;
     margin: auto;
     position: relative;
     --border-size: 2px;
@@ -91,7 +91,6 @@
   right: 0;
   bottom: 0;
   border-radius: 20.5px;
-  z-index: -1;
   border: var(--border-size) solid $primary-white;
   transition: top, left, right, bottom, 100ms ease-in-out;
 }

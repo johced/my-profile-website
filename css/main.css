@@ -238,7 +238,7 @@
   width: 220px;
   height: 41px;
   outline: none;
-  cursor: pointer;
+  cursor: none;
   margin: auto;
   position: relative;
   --border-size: 2px;
@@ -263,7 +263,6 @@
   right: 0;
   bottom: 0;
   border-radius: 20.5px;
-  z-index: -1;
   border: var(--border-size) solid #fafffd;
   -webkit-transition: top, left, right, bottom, 100ms ease-in-out;
   transition: top, left, right, bottom, 100ms ease-in-out;
@@ -359,6 +358,7 @@
 }
 
 .social i {
+  cursor: none;
   font-size: 4rem;
   margin: 20px;
   color: #736f72;
@@ -408,6 +408,18 @@
   }
 }
 
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 10px solid white;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -421,6 +433,7 @@ body {
   background-image: linear-gradient(45deg, #342e37, #342e37, #342e37, #736f72);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  cursor: none;
 }
 
 @media only screen and (min-width: 768px) {
