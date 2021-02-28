@@ -231,7 +231,6 @@
 
 .main button {
   background-color: #fafffd;
-  color: #736f72;
   font-size: 1.5rem;
   font-weight: 900;
   border: none;
@@ -243,6 +242,11 @@
   margin: auto;
   position: relative;
   --border-size: 2px;
+}
+
+.main button a {
+  color: #736f72;
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 768px) {
