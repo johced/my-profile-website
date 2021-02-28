@@ -3,6 +3,9 @@
   flex-direction: column;
   padding-left: 27px;
   padding-right: 27px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 
   & img {
     width: 20%;
@@ -10,10 +13,10 @@
   }
   & div.header {
     padding-top: 30px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: $fw-bold;
     max-width: 500px;
-    color: $background;
+    color: $primary-white;
     & .header-title {
       padding-bottom: 20px;
     }
@@ -25,9 +28,8 @@
     }
   }
   & span {
-    color: $background;
     font-size: 1.3rem;
-    color: $darkgrey;
+    color: $primary-gray;
     @include tablet {
       font-size: 2rem;
     }
@@ -38,11 +40,11 @@
     font-size: 0.68rem;
     max-width: 600px;
     line-height: 1.6;
-    color: $background;
+    color: $primary-white;
     & span.highlight {
       font-style: italic;
       font-size: 0.68rem;
-      color: $darkgrey;
+      color: $primary-gray;
       @include tablet {
         font-size: 1rem;
       }
@@ -59,8 +61,11 @@
   }
 
   & button {
-    background-color: $background;
-    color: $darkgrey;
+    background-color: $primary-white;
+    & a {
+      color: $primary-gray;
+      text-decoration: none;
+    }
     font-size: 1.5rem;
     font-weight: $fw-bold;
     border: none;
@@ -68,16 +73,33 @@
     width: 220px;
     height: 41px;
     outline: none;
-    cursor: pointer;
+    cursor: none;
     margin: auto;
-    transition: 1s;
-
+    position: relative;
+    --border-size: 2px;
     @include tablet {
       margin: 2rem 0;
     }
   }
 }
 
-// .contact-btn:hover {
-//   background-color: blue;
-// }
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20.5px;
+  border: var(--border-size) solid $primary-white;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.contact-btn:hover::before,
+.contact-btn:focus::before {
+  border-radius: 30px;
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}

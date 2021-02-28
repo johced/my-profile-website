@@ -10,9 +10,10 @@
   }
 
   & i {
+    cursor: none;
     font-size: 4rem;
     margin: 20px;
-    color: $darkgrey;
+    color: $primary-gray;
     transition: 300ms ease-in-out;
   }
 
