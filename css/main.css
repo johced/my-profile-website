@@ -8,19 +8,19 @@
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 1024px) and (min-height: 768px) {
+@media only screen and (min-width: 1024px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+@media only screen and (min-width: 1366px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid countdowngrid' 100px '. starttaggrid ........  ........      ........      ......... .' 50px '. socialgrid   maingrid  maingrid      maingrid      skillsgrid .' 1fr 'closetaggrid closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid closetaggrid' 75px / 10% 20% 1fr 1fr 1fr 1fr 10%;
   }
 }
 
@@ -88,13 +88,13 @@
   color: #736f72;
 }
 
-@media only screen and (min-width: 1024px) and (min-height: 768px) {
+@media only screen and (min-width: 1024px) {
   .countdown {
     font-size: 1rem;
   }
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+@media only screen and (min-width: 1366px) {
   .countdown {
     font-size: 1.2rem;
   }
@@ -134,7 +134,7 @@
 }
 
 .main img {
-  width: 30%;
+  width: 20%;
   max-width: 125px;
 }
 
@@ -145,45 +145,70 @@
   max-width: 500px;
 }
 
+.main div.header .header-title {
+  padding-bottom: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   .main div.header {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+  }
+  .main div.header .header-title {
+    padding-bottom: 20px;
   }
 }
 
 .main span {
-  color: #dce1e3;
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main span {
+    font-size: 2rem;
+  }
 }
 
 .main div.aboutme {
   padding-top: 21px;
   font-size: 0.68rem;
   max-width: 600px;
+  line-height: 1.6;
   color: #ffffff;
 }
 
 .main div.aboutme span.highlight {
-  text-decoration: underline;
-  font-size: 1rem;
-  font-weight: 900;
-  color: #fafffd;
+  font-style: italic;
+  font-size: 0.68rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .main div.aboutme span.highlight {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .main div.aboutme span.highlight {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .main div.aboutme {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+@media only screen and (min-width: 1366px) {
   .main div.aboutme {
     font-size: 1.25rem;
   }
 }
 
 .main button {
-  background-color: #a63d46;
-  color: #ffffff;
+  background-color: #fafffd;
+  color: #736f72;
   font-size: 1.5rem;
   font-weight: 900;
   border: none;
@@ -215,7 +240,7 @@
           justify-content: center;
 }
 
-@media only screen and (min-width: 1024px) and (min-height: 768px) {
+@media only screen and (min-width: 1024px) {
   .skills {
     -webkit-box-align: unset;
         -ms-flex-align: unset;
@@ -232,10 +257,9 @@
   line-height: 2rem;
   font-size: 0.875rem;
   font-weight: 300;
-  opacity: 50%;
 }
 
-@media only screen and (min-width: 1366px) and (min-height: 1024px) {
+@media only screen and (min-width: 1366px) {
   .skills ul {
     font-size: 1.2rem;
     line-height: 3rem;
@@ -295,7 +319,8 @@
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-left: 20px;
-  opacity: 30%;
+  background-color: #ffffff;
+  border-radius: 50% 50% 0% 0%;
 }
 
 .closetag img {

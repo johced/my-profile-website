@@ -16,7 +16,7 @@
       'starttaggrid ........  ........      ........      .........' 50px
       'socialgrid   maingrid  maingrid      maingrid      maingrid' 1fr
       'skillsgrid   maingrid  maingrid      maingrid      maingrid' 1fr
-      'closetaggrid maingrid  maingrid      maingrid      maingrid' 75px
+      'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
   }
   @include tabletside {
@@ -24,17 +24,17 @@
       'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
       'starttaggrid ........  ........      ........      .........' 50px
       'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
-      'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
+      'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
   }
 
   @include tabletproside {
     grid-template:
-      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 50px
-      'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
-      'closetaggrid maingrid  maingrid      maingrid      skillsgrid' 75px
-      / 20% 1fr 1fr 1fr 1fr;
+      'myurlgrid myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid countdowngrid' 100px
+      '. starttaggrid ........  ........      ........      ......... .' 50px
+      '. socialgrid   maingrid  maingrid      maingrid      skillsgrid .' 1fr
+      'closetaggrid closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid closetaggrid' 75px
+      / 10% 20% 1fr 1fr 1fr 1fr 10%;
   }
 }
 

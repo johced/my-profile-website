@@ -5,7 +5,7 @@
   padding-right: 27px;
 
   & img {
-    width: 30%;
+    width: 20%;
     max-width: 125px;
   }
   & div.header {
@@ -13,27 +13,42 @@
     font-size: 1.5rem;
     font-weight: $fw-bold;
     max-width: 500px;
+    & .header-title {
+      padding-bottom: 20px;
+    }
     @include tablet {
-      font-size: 2.3rem;
+      font-size: 2.5rem;
+      & .header-title {
+        padding-bottom: 20px;
+      }
     }
   }
   & span {
-    color: $light-grey;
+    color: $white;
+    font-size: 1.3rem;
+    @include tablet {
+      font-size: 2rem;
+    }
   }
 
   & div.aboutme {
     padding-top: 21px;
     font-size: 0.68rem;
     max-width: 600px;
+    line-height: 1.6;
     color: $white;
     & span.highlight {
-      text-decoration: underline;
-      font-size: 1rem;
-      font-weight: 900;
-      color: $background;
+      font-style: italic;
+      font-size: 0.68rem;
+      @include tablet {
+        font-size: 1rem;
+      }
+      @include tabletproside {
+        font-size: 1.25rem;
+      }
     }
     @include tablet {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
     @include tabletproside {
       font-size: 1.25rem;
@@ -41,8 +56,8 @@
   }
 
   & button {
-    background-color: $attention;
-    color: $white;
+    background-color: $background;
+    color: $darkgrey;
     font-size: 1.5rem;
     font-weight: $fw-bold;
     border: none;

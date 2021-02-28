@@ -5,11 +5,11 @@
 }
 
 @mixin tabletside {
-  @media only screen and (min-width: 1024px) and (min-height: 768px) {
+  @media only screen and (min-width: 1024px) {
     @content;
   }
 }
-
+// and (min-height: 768px)
 // @mixin tabletpro {
 //   @media only screen and (min-width: 1024px) and (min-height: 825px) {
 //     @content;
@@ -17,11 +17,11 @@
 // }
 
 @mixin tabletproside {
-  @media only screen and (min-width: 1366px) and (min-height: 1024px) {
+  @media only screen and (min-width: 1366px) {
     @content;
   }
 }
-
+// and (min-height: 1024px)
 // @mixin desktop {
 //   @media only screen and (min-width: 1367px) and (min-height: 769px) {
 //     @content;
