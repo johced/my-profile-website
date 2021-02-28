@@ -2,7 +2,10 @@
   display: flex;
   align-items: baseline;
   padding-left: 20px;
-  opacity: 30%;
+  // opacity: 30%;
+  background-color: $white;
+  border-radius: 50% 50% 0% 0%;
+
   & img {
     max-width: 3.7rem;
     @include tablet {
