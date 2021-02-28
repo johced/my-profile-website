@@ -143,6 +143,7 @@
   font-size: 1.5rem;
   font-weight: 900;
   max-width: 500px;
+  color: #fafffd;
 }
 
 .main div.header .header-title {
@@ -159,8 +160,9 @@
 }
 
 .main span {
-  color: #ffffff;
+  color: #fafffd;
   font-size: 1.3rem;
+  color: #736f72;
 }
 
 @media only screen and (min-width: 768px) {
@@ -174,12 +176,13 @@
   font-size: 0.68rem;
   max-width: 600px;
   line-height: 1.6;
-  color: #ffffff;
+  color: #fafffd;
 }
 
 .main div.aboutme span.highlight {
   font-style: italic;
   font-size: 0.68rem;
+  color: #736f72;
 }
 
 @media only screen and (min-width: 768px) {
@@ -257,6 +260,7 @@
   line-height: 2rem;
   font-size: 0.875rem;
   font-weight: 300;
+  color: #736f72;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -298,7 +302,7 @@
 .social i {
   font-size: 4rem;
   margin: 20px;
-  color: #342e37;
+  color: #736f72;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
@@ -342,7 +346,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #736f72;
+  background-color: #342e37;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
