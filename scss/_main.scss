@@ -16,7 +16,7 @@
     font-size: 2rem;
     font-weight: $fw-bold;
     max-width: 500px;
-    color: $background;
+    color: $primary-white;
     & .header-title {
       padding-bottom: 20px;
     }
@@ -28,9 +28,8 @@
     }
   }
   & span {
-    // color: $background;
     font-size: 1.3rem;
-    color: $darkgrey;
+    color: $primary-gray;
     @include tablet {
       font-size: 2rem;
     }
@@ -41,11 +40,11 @@
     font-size: 0.68rem;
     max-width: 600px;
     line-height: 1.6;
-    color: $background;
+    color: $primary-white;
     & span.highlight {
       font-style: italic;
       font-size: 0.68rem;
-      color: $darkgrey;
+      color: $primary-gray;
       @include tablet {
         font-size: 1rem;
       }
@@ -62,8 +61,8 @@
   }
 
   & button {
-    background-color: $background;
-    color: $darkgrey;
+    background-color: $primary-white;
+    color: $primary-gray;
     font-size: 1.5rem;
     font-weight: $fw-bold;
     border: none;
@@ -73,13 +72,8 @@
     outline: none;
     cursor: pointer;
     margin: auto;
-    // margin: 1rem;
-    // transition: 0.5s;
     position: relative;
     --border-size: 2px;
-    // --border-color: #e3e3e3;
-
-    // --background-color: #e3e3e3;
     @include tablet {
       margin: 2rem 0;
     }
@@ -93,10 +87,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-
   border-radius: 20.5px;
   z-index: -1;
-  border: var(--border-size) solid $background;
+  border: var(--border-size) solid $primary-white;
   transition: top, left, right, bottom, 100ms ease-in-out;
 }
 
@@ -108,7 +101,3 @@
   right: calc(var(--border-size) * -2);
   bottom: calc(var(--border-size) * -2);
 }
-
-// .contact-btn:hover {
-//   background-color: blue;
-// }

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $black;
+  background-color: $background;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -10,7 +10,7 @@
   & h1 {
     font-weight: 900;
     font-size: 3rem;
-    color: $light-grey;
+    color: $primary-gray-light;
     opacity: 30%;
   }
 }

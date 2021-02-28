@@ -8,19 +8,19 @@
 
 @media only screen and (min-width: 768px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........      ........      ........      .........' 50px 'socialgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid .........     .........     .........     .........' 50px 'socialgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .grid-container {
-    grid-template: 'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid ........  ........      ........      .........' 50px 'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr 'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
+    grid-template: 'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid .........     .........     .........     ..........' 50px 'socialgrid   maingrid      maingrid      maingrid      skillsgrid' 1fr 'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
 }
 
 @media only screen and (min-width: 1366px) {
   .grid-container {
-    grid-template: 'myurlgrid myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid countdowngrid' 100px '. starttaggrid ........  ........      ........      ......... .' 50px '. socialgrid   maingrid  maingrid      maingrid      skillsgrid .' 1fr 'closetaggrid closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid closetaggrid' 75px / 10% 20% 1fr 1fr 1fr 1fr 10%;
+    grid-template: 'myurlgrid    myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid countdowngrid' 100px '.........    starttaggrid .........     .........     .........     .........     .........' 50px '.........    socialgrid   maingrid      maingrid      maingrid      skillsgrid    .........' 1fr 'closetaggrid closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 10% 20% 1fr 1fr 1fr 1fr 10%;
   }
 }
 
@@ -310,9 +310,7 @@
   line-height: 2rem;
   font-size: 0.875rem;
   font-weight: 300;
-  color: #736f72;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  color: #dce1e3;
   cursor: none;
 }
 
@@ -324,12 +322,10 @@
 }
 
 .skills ul li:nth-child(odd) {
-  color: #fafffd;
+  color: #736f72;
 }
 
 .skills ul li:hover {
-  -webkit-transition: 300ms ease-in-out;
-  transition: 300ms ease-in-out;
   font-weight: 900;
 }
 
@@ -387,7 +383,7 @@
   font-size: 0.7rem;
   color: #736f72;
   padding-left: 20px;
-  background-color: #ffffff;
+  background-color: #fafffd;
   border-radius: 50% 50% 0% 0%;
   -webkit-user-select: none;
   /* Safari */

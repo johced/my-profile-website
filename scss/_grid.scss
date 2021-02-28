@@ -13,7 +13,7 @@
   @include tablet {
     grid-template:
       'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........      ........      ........      .........' 50px
+      'starttaggrid .........     .........     .........     .........' 50px
       'socialgrid   maingrid      maingrid      maingrid      maingrid' 1fr
       'skillsgrid   maingrid      maingrid      maingrid      maingrid' 1fr
       'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px
@@ -21,19 +21,19 @@
   }
   @include tabletside {
     grid-template:
-      'myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid' 100px
-      'starttaggrid ........  ........      ........      .........' 50px
-      'socialgrid   maingrid  maingrid      maingrid      skillsgrid' 1fr
-      'closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid' 75px
+      'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px
+      'starttaggrid .........     .........     .........     ..........' 50px
+      'socialgrid   maingrid      maingrid      maingrid      skillsgrid' 1fr
+      'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px
       / 20% 1fr 1fr 1fr 1fr;
   }
 
   @include tabletproside {
     grid-template:
-      'myurlgrid myurlgrid    myurlgrid countdowngrid countdowngrid countdowngrid countdowngrid' 100px
-      '. starttaggrid ........  ........      ........      ......... .' 50px
-      '. socialgrid   maingrid  maingrid      maingrid      skillsgrid .' 1fr
-      'closetaggrid closetaggrid closetaggrid  closetaggrid      closetaggrid      closetaggrid closetaggrid' 75px
+      'myurlgrid    myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid countdowngrid' 100px
+      '.........    starttaggrid .........     .........     .........     .........     .........' 50px
+      '.........    socialgrid   maingrid      maingrid      maingrid      skillsgrid    .........' 1fr
+      'closetaggrid closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px
       / 10% 20% 1fr 1fr 1fr 1fr 10%;
   }
 }
