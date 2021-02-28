@@ -238,7 +238,6 @@
   width: 220px;
   height: 41px;
   outline: none;
-  cursor: none;
   margin: auto;
   position: relative;
   --border-size: 2px;
@@ -271,6 +270,7 @@
 .contact-btn:hover::before,
 .contact-btn:focus::before {
   border-radius: 30px;
+  z-index: -1;
   top: calc(var(--border-size) * -2);
   left: calc(var(--border-size) * -2);
   right: calc(var(--border-size) * -2);
