@@ -3,7 +3,7 @@
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  grid-template: 'myurlgrid' 15vh 'countdowngrid' 10vh 'starttaggrid' 5vh 'maingrid' 70vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
+  grid-template: 'myurlgrid' 5vh 'countdowngrid' 5vh 'starttaggrid' 3vh 'maingrid' 87vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
 }
 
 @media only screen and (min-width: 768px) {
@@ -26,30 +26,37 @@
 
 .myurl {
   grid-area: myurlgrid;
+  border: 1px solid black;
 }
 
 .countdown {
   grid-area: countdowngrid;
+  border: 1px solid black;
 }
 
 .starttag {
   grid-area: starttaggrid;
+  border: 1px solid black;
 }
 
 .main {
   grid-area: maingrid;
+  border: 1px solid black;
 }
 
 .skills {
   grid-area: skillsgrid;
+  border: 1px solid black;
 }
 
 .social {
   grid-area: socialgrid;
+  border: 1px solid black;
 }
 
 .closetag {
   grid-area: closetaggrid;
+  border: 1px solid black;
 }
 
 .myurl {
@@ -73,10 +80,16 @@
 }
 
 .myurl h1 {
-  font-weight: 900;
-  font-size: 3rem;
   color: #dce1e3;
   opacity: 30%;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .myurl h1 {
+    font-weight: 900;
+    font-size: 3rem;
+  }
 }
 
 .countdown {
