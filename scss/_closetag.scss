@@ -1,0 +1,20 @@
+.closetag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  color: $primary-gray;
+  padding-left: 20px;
+  background-color: $primary-white;
+  border-radius: 50% 50% 0% 0%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  & img {
+    max-width: 3.7rem;
+    @include tablet {
+      max-width: 4.3rem;
+    }
+  }
+}

@@ -1,5 +1,37 @@
+@import 'responsive';
+@import 'grid';
+@import 'colors';
+@import 'myurl';
+@import 'typography';
+@import 'countdown';
+@import 'starttag';
+@import 'main';
+@import 'skills';
+@import 'social';
+@import 'closetag';
+@import 'cursor';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
+}
+
+body {
+  font-family: $ff-s;
+  background-color: $background;
+  background-image: linear-gradient(45deg, $background, $background, $background, $primary-gray);
+  transition: 0.3s;
+
+  @include tablet {
+    background-image: linear-gradient(
+      45deg,
+      $background,
+      $background,
+      $background,
+      $background,
+      $primary-gray
+    );
+  }
 }

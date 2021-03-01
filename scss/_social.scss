@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: unset;
+    padding-top: 100px;
+  }
+
+  & i {
+    cursor: none;
+    font-size: 4rem;
+    margin: 20px;
+    color: $primary-gray;
+    transition: 300ms ease-in-out;
+  }
+
+  & i.fa-linkedin-in:hover {
+    color: $linkedin;
+  }
+
+  & i.fa-github:hover {
+    color: $github;
+  }
+}

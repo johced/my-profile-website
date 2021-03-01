@@ -4,10 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>johced</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>JOHCED</title>
+    <script src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/css/main.min.css" />
   </head>
   <body>
-    <h1>Welcome!</h1>
+    <div class="grid-container">
+      <div class="myurl">
+        <h1>JOHCED.com</h1>
+      </div>
+      <div class="countdown">
+        <span><p id="countDown"></p></span>
+      </div>
+      <div class="starttag"><div class="cursor"></div></div>
+      <div class="main">
+        <img src="img/logo2.svg" alt="JC logo" />
+        <div class="header">
+          <div class="header-title">Front End Developer</div>
+          <span> Student @ Medieinstitutet Stockholm</span>
+        </div>
+        <div class="aboutme" id="aboutmeBg">
+          Hi, I’m Johan, i’m on a journey to become a great web developer. Love to create and solve
+          pussels, play golf and enjoy allt the good things life has to offer. <br />
+          <br />
+          <span class="highlight" id="highlightBg">
+            Currently looking for a great company to make my LIA 1 (Learning in a work environment).
+          </span>
+        </div>
+        <a id="changeBg" class="contact-btn" href="mailto:johan.cederstrand@medieinstitutet.se"
+          >Contact</a
+        >
+      </div>
+      <div class="skills" id="skillsScroll">
+        <ul>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>SASS</li>
+          <li>NODE JS</li>
+          <li>MONGO DB</li>
+          <li>EXPRESS</li>
+          <li>REACT</li>
+          <li>ANGULAR</li>
+        </ul>
+      </div>
+      <div class="social">
+        <div>
+          <a href="https://github.com/johced" target="_blank"
+            ><i id="gitBg" class="fab fa-github"></i
+          ></a>
+        </div>
+        <div>
+          <a href="https://linkedin.com/in/johced" target="_blank"
+            ><i id="linkedBg" class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+      <div class="closetag">
+        <span>&copy; JOHCED</span>
+      </div>
+    </div>
   </body>
 </html>

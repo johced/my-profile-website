@@ -1,0 +1,105 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 27px;
+  padding-right: 27px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  & img {
+    width: 20%;
+    max-width: 125px;
+  }
+  & div.header {
+    padding-top: 30px;
+    font-size: 2rem;
+    font-weight: $fw-bold;
+    max-width: 500px;
+    color: $primary-white;
+    & .header-title {
+      padding-bottom: 20px;
+    }
+    @include tablet {
+      font-size: 2.5rem;
+      & .header-title {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  & span {
+    font-size: 1.3rem;
+    color: $primary-gray;
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  & div.aboutme {
+    padding-top: 21px;
+    font-size: 0.68rem;
+    max-width: 600px;
+    line-height: 1.6;
+    color: $primary-white;
+    & span.highlight {
+      font-style: italic;
+      font-size: 0.68rem;
+      color: $primary-gray;
+      @include tablet {
+        font-size: 1rem;
+      }
+      @include tabletproside {
+        font-size: 1.25rem;
+      }
+    }
+    @include tablet {
+      font-size: 1rem;
+    }
+    @include tabletproside {
+      font-size: 1.25rem;
+    }
+  }
+
+  & a {
+    background-color: $primary-white;
+    text-decoration: none;
+    color: $primary-gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: $fw-bold;
+    border: none;
+    border-radius: 20.5px;
+    width: 220px;
+    height: 41px;
+    outline: none;
+    position: relative;
+    margin: 2rem 0;
+    cursor: pointer;
+    --border-size: 2px;
+  }
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20.5px;
+  border: var(--border-size) solid $primary-white;
+  transition: top, left, right, bottom, 100ms ease-in-out;
+  z-index: -1;
+}
+
+.contact-btn:hover::before,
+.contact-btn:focus::before {
+  border-radius: 30px;
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}

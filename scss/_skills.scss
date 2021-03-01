@@ -1,0 +1,33 @@
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include tabletside {
+    align-items: unset;
+    justify-content: center;
+    padding-top: 100px;
+  }
+
+  & ul {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    list-style-type: none;
+    line-height: 2rem;
+    font-size: 0.875rem;
+    font-weight: $fw-normal;
+    color: $primary-gray-light;
+    cursor: none;
+    @include tabletproside {
+      font-size: 1.2rem;
+      line-height: 3rem;
+    }
+
+    & li:nth-child(odd) {
+      color: $primary-gray;
+    }
+    & li:hover {
+      font-weight: $fw-bold;
+    }
+  }
+}
