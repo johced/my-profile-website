@@ -262,6 +262,7 @@
   outline: none;
   position: relative;
   margin: 2rem 0;
+  cursor: pointer;
   --border-size: 2px;
 }
 
@@ -276,12 +277,12 @@
   border: var(--border-size) solid #fafffd;
   -webkit-transition: top, left, right, bottom, 100ms ease-in-out;
   transition: top, left, right, bottom, 100ms ease-in-out;
+  z-index: -1;
 }
 
 .contact-btn:hover::before,
 .contact-btn:focus::before {
   border-radius: 30px;
-  z-index: -1;
   top: calc(var(--border-size) * -2);
   left: calc(var(--border-size) * -2);
   right: calc(var(--border-size) * -2);
@@ -423,13 +424,12 @@
 .cursor {
   width: 2rem;
   height: 2rem;
-  border: 10px solid white;
+  border: 10px solid #fafffd;
   border-radius: 50%;
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   pointer-events: none;
-  z-index: 1;
 }
 
 * {
@@ -437,6 +437,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  cursor: none;
 }
 
 body {
@@ -445,7 +446,6 @@ body {
   background-image: linear-gradient(45deg, #342e37, #342e37, #342e37, #736f72);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: none;
 }
 
 @media only screen and (min-width: 768px) {
