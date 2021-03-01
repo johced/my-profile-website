@@ -3,7 +3,7 @@
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  grid-template: 'myurlgrid' 15vh 'countdowngrid' 10vh 'starttaggrid' 5vh 'maingrid' 70vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
+  grid-template: 'myurlgrid' 5vh 'countdowngrid' 5vh 'starttaggrid' 3vh 'maingrid' 87vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
 }
 
 @media only screen and (min-width: 768px) {
@@ -73,10 +73,16 @@
 }
 
 .myurl h1 {
-  font-weight: 900;
-  font-size: 3rem;
   color: #dce1e3;
-  opacity: 30%;
+  opacity: 10%;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .myurl h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+  }
 }
 
 .countdown {
