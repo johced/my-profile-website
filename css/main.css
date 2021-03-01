@@ -102,6 +102,16 @@
   /* Standard syntax */
 }
 
+.countdown span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 @media only screen and (min-width: 1024px) {
   .countdown {
     font-size: 1rem;
@@ -229,8 +239,20 @@
   }
 }
 
-.main button {
+.main a {
   background-color: #fafffd;
+  text-decoration: none;
+  color: #736f72;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5rem;
   font-weight: 900;
   border: none;
@@ -238,20 +260,9 @@
   width: 220px;
   height: 41px;
   outline: none;
-  margin: auto;
   position: relative;
+  margin: 2rem 0;
   --border-size: 2px;
-}
-
-.main button a {
-  color: #736f72;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .main button {
-    margin: 2rem 0;
-  }
 }
 
 .contact-btn::before {

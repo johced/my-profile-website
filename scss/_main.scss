@@ -60,12 +60,14 @@
     }
   }
 
-  & button {
+  & a {
     background-color: $primary-white;
-    & a {
-      color: $primary-gray;
-      text-decoration: none;
-    }
+    text-decoration: none;
+    color: $primary-gray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: $fw-bold;
     border: none;
@@ -73,12 +75,9 @@
     width: 220px;
     height: 41px;
     outline: none;
-    margin: auto;
     position: relative;
+    margin: 2rem 0;
     --border-size: 2px;
-    @include tablet {
-      margin: 2rem 0;
-    }
   }
 }
 
