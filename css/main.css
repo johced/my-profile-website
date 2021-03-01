@@ -26,37 +26,30 @@
 
 .myurl {
   grid-area: myurlgrid;
-  border: 1px solid black;
 }
 
 .countdown {
   grid-area: countdowngrid;
-  border: 1px solid black;
 }
 
 .starttag {
   grid-area: starttaggrid;
-  border: 1px solid black;
 }
 
 .main {
   grid-area: maingrid;
-  border: 1px solid black;
 }
 
 .skills {
   grid-area: skillsgrid;
-  border: 1px solid black;
 }
 
 .social {
   grid-area: socialgrid;
-  border: 1px solid black;
 }
 
 .closetag {
   grid-area: closetaggrid;
-  border: 1px solid black;
 }
 
 .myurl {
@@ -81,14 +74,14 @@
 
 .myurl h1 {
   color: #dce1e3;
-  opacity: 30%;
+  opacity: 10%;
   font-size: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .myurl h1 {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 

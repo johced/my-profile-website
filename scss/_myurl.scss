@@ -9,11 +9,11 @@
 
   & h1 {
     color: $primary-gray-light;
-    opacity: 30%;
+    opacity: 10%;
     font-size: 1rem;
     @include tablet {
       font-weight: 900;
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
 }
