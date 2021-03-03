@@ -6,7 +6,7 @@
   grid-template: 'myurlgrid' 5vh 'countdowngrid' 5vh 'starttaggrid' 3vh 'maingrid' 87vh 'skillsgrid' 65vh 'socialgrid' 25vh 'closetaggrid' 10vh / 1fr;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .grid-container {
     grid-template: 'myurlgrid    myurlgrid     countdowngrid countdowngrid countdowngrid' 100px 'starttaggrid .........     .........     .........     .........' 50px 'socialgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'skillsgrid   maingrid      maingrid      maingrid      maingrid' 1fr 'closetaggrid closetaggrid  closetaggrid  closetaggrid  closetaggrid' 75px / 20% 1fr 1fr 1fr 1fr;
   }
@@ -78,7 +78,7 @@
   font-size: 1rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .myurl h1 {
     font-weight: 900;
     font-size: 2.5rem;
@@ -145,7 +145,7 @@
   max-width: 3.4rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .starttag img {
     max-width: 5rem;
   }
@@ -187,7 +187,7 @@
   padding-bottom: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .main div.header {
     font-size: 2.5rem;
   }
@@ -201,7 +201,7 @@
   color: #736f72;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .main span {
     font-size: 2rem;
   }
@@ -221,7 +221,7 @@
   color: #736f72;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .main div.aboutme span.highlight {
     font-size: 1rem;
   }
@@ -233,7 +233,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .main div.aboutme {
     font-size: 1rem;
   }
@@ -363,7 +363,7 @@
   overflow-x: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .social {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -421,23 +421,21 @@
   max-width: 3.7rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   .closetag img {
     max-width: 4.3rem;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .cursor {
-    width: 2rem;
-    height: 2rem;
-    border: 10px solid #fafffd;
-    border-radius: 50%;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 10px solid #fafffd;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 * {
@@ -456,7 +454,7 @@ body {
   transition: 0.3s;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 840px) {
   body {
     background-image: linear-gradient(45deg, #342e37, #342e37, #342e37, #342e37, #736f72);
   }
